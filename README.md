@@ -73,4 +73,4 @@ Desplegar el API REST de Laptops en Heroku y verificar funcionamiento desde POST
 
 ## Ejercicio 12
 
-Añadir Spring Security sobre el proyecto API REST de Laptops y configurar 2 usuarios en memoria utilizando una clase WebSecurityConfig.
+Añadir Spring Security sobre el proyecto API REST de Laptops y configurar 2 usuarios en memoria utilizando una clase WebSecurityConfig
