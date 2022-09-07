@@ -5,6 +5,7 @@ import com.example.ejercicios7_8_9_spring.repository.LaptopRepository;
 import io.swagger.v3.oas.annotations.Operation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -15,9 +16,10 @@ import java.util.Optional;
 @RestController
 public class LaptopController {
 
+
+
     private LaptopRepository laptopRepository;
     private final Logger log = LoggerFactory.getLogger(LaptopController.class);
-
 
     public LaptopController(LaptopRepository laptopRepository) {
         this.laptopRepository = laptopRepository;
@@ -25,6 +27,7 @@ public class LaptopController {
 
     @Operation(summary = "Buscar todos los laptops", description = "Buscar todos")
     @GetMapping("/api/laptop")
+
     public List<Laptop> findAll(){
 
         return laptopRepository.findAll();
